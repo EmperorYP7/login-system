@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="display-4" style="text-align: center; margin-top: 50px;">Join us now by signing up!</h1>
+    
+    <div class="container col-5" style="margin-top: 50px;">
+    <form action="/signup" method="POST">
+        <div class="form-group">
+            <label for="InputName1">Your Name</label>
+            <input type="name" class="form-control" id="InputName1" name="name">
+        </div>
+        <div class="form-group">
+          <label for="InputEmail1">Email address</label>
+          <input type="email" class="form-control" id="InputEmail1" name="email" aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="InputPassword1">Password</label>
+          <input type="password" class="form-control" name="password" id="InputPassword1">
+        </div>
+        <div class="form-group" style="margin-bottom: 30px;">
+            <label for="InputPassword2">Confirm Password</label>
+            <input type="password" class="form-control" name="cnfpassword" id="InputPassword2">
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+
+    <div class="container" style="text-align: center; margin-top:30px">
+        <p>Already have an account with us? Lets dive in!</p>
+        <a href="/login"><button type="login" class="btn btn-primary">Login</button></a>
+    </div>
+</body>
+</html>
